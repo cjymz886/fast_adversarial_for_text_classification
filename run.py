@@ -36,7 +36,7 @@ def train():
 
     #parameters in paper
     epsilon = torch.tensor(0.1)
-    alpha= 10 / 255
+    alpha= 0.04
     attack_iters=5
 
 
