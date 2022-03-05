@@ -63,11 +63,11 @@ python run.py test <br>
 6 结论
 =
 通过本次实验，有以下几点结论与想法：<br>
- + 对抗训练训练方法的确有助于提高文本分类任务效果；<br>
+ + 对抗训练技术方法的确有助于提高文本分类任务的效果；<br>
  + FGSM方法虽然提高了训练效率，但并不影响推理速度，而且NLP领域任务都不用大的轮数，所以PGD方法更合适些；<br>
  + 三种方法涉及delta、alpha超参数的初始化设定，面临不同的任务，会有变动，增加探寻合适参数的难度；<br>
- + 在文本分类中，觉得更好用word2vec或者bert方式初始化向量来进行干扰样本生成，应比随机初始化embedding方式更合适，而且可以根据高频率词的分布来初始化delta、alpha更合理；<br>
- + 若在本论文的FGSM基础，考虑如何更稳定或自动化的方式初始化delta等参数仍值得去研究。<br>
+ + 在文本分类中，觉得用word2vec或者bert方式初始化向量来进行干扰样本生成，应会比随机初始化embedding方式更合适，而且可以根据高频率词的分布来初始化delta、alpha更合理；<br>
+ + 若在本论文提出的改进版FGSM基础上班，考虑如何更稳定或自动化的方式初始化delta等参数，是一个值得优化的方向。<br>
 
  # Reference
 1.[FAST IS BETTER THAN FREE: REVISITING ADVERSARIAL TRAINING](https://arxiv.org/pdf/2001.03994.pdf)<br>
