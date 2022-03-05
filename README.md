@@ -1,0 +1,2 @@
+# fast_adversarial_for_text_classification
+基于TextCNN，测试三种对抗训练模型（FGSM，PGD，FREE）在text classification上的表现
