@@ -34,6 +34,12 @@ cnews.test.txt:  测试集(1000\*10)<br>
         out = self.fc2(fc)
         return out
  ```
+此外，论文涉及到三个超参数分别为epsilon、alpha、attack_iters，同时epsilon会控制delta参数的生成。本实验中，根据论文在图像领域的设定，以及自己主观经验判断和小范围的网格搜索方式设定以下具体值。相比论文中根据数据分布的均值和方差方式来设定，本项目显得更粗糙些，但为了达到只是实验对比的目的，此设定也是有效的。<br>
+ ```
+ epsilon = torch.tensor(0.1)
+ alpha= 0.04
+ attack_iters=5
+ ```
 
 4 运行步骤
 =
