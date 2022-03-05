@@ -23,7 +23,7 @@ cnews.test.txt:  测试集(1000\*10)<br>
  
 3 生成对抗样本思路
 =
-本实验在文本Embedding的上，利用对抗训练方法产生attack后，然后再加入embedding中，最后利用cnn来进行文本特征学习。其实现部分代码如下：
+本实验在文本按字级别Embedding上，利用对抗训练方法产生attack后，然后再加入embedding中，最后利用cnn来进行文本特征学习。其实现部分代码如下：
  ```
      def forward(self, inputs_ids,attack=None,is_training=True):
         embs = self.embedding(inputs_ids)
